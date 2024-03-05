@@ -13,10 +13,18 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(apples: i32) -> i32 {
+    let normalprice = 2;
+    let discountprice = 1;
+    let mut totalprice = 0;
+    if apples > 40 {
+        totalprice=discountprice*apples
+    } else {
+        totalprice=normalprice*apples
+    }
+    totalprice
+}
 
 // Don't modify this function!
 #[test]
@@ -31,3 +39,5 @@ fn verify_test() {
     assert_eq!(41, price3);
     assert_eq!(65, price4);
 }
+
+
