@@ -18,7 +18,7 @@ fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
     }
 
     // At this point, `v` should be equal to [4, 8, 12, 16, 20].
-    v
+    v // v returned here is the one modified
 }
 
 fn vec_map(v: &Vec<i32>) -> Vec<i32> {
